@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Log') {
+      steps {
+        sh 'sudo ls -al'
+      }
+    }
+
   }
 }
